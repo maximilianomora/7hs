@@ -1,0 +1,249 @@
+/*********************************************************************************************
+
+    left column: 250px
+    right column: 250px
+    padding left/right column: 10px
+    padding center column: 30px
+
+**********************************************************************************************/
+
+body {
+    margin: auto 0px;
+    width: auto;
+}
+
+#page {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+#page-header {
+    float: left;
+    width: 100%;
+}
+
+#page-content {
+    clear: both;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#page-content #region-main-box {
+    float: left;
+    margin-left: 0;
+    position: relative;
+    width: 200%;
+    right: 100%;
+}
+
+#page-content #region-post-box {
+    float: left;
+    width: 100%;
+}
+
+#page-content #region-main-wrap {
+    float: left;
+    width: 50%;
+}
+
+#page-content #region-main {
+    overflow: hidden;
+    position: relative;
+    left: 100%;
+}
+
+#page-content #region-post {
+    float: right;
+    position: relative;
+}
+
+#page-content #region-main .region-content {
+    overflow: hidden;
+    padding: 20px 30px 20px 0;
+}
+
+#page-content #region-post .region-content {
+    overflow: hidden;
+    padding: 20px 0 20px 10px;
+}
+
+#page-footer {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+
+.frontpage_header_td
+{
+    line-height:0;
+    padding:5px;
+}
+
+.frontpage_menu_links
+{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family:Century Gothic;
+}
+
+.frontpage_menu_table
+{
+    margin-bottom: 0px;     
+}
+
+.index_main_text
+ {
+    font-size: 3.5em; 
+    font-weight: bold;
+    font-family:Century Gothic;
+    color: #b3b3b3; 
+    position: relative;
+    left:130px;  
+       
+ }
+ 
+ .orngBullet {
+     list-style-type: none;
+    list-style-position: outside;
+    padding-left: 18px;
+  
+} 
+form.contacto label {
+    display: block;
+    font-size: 1.2em;
+    color: #404040;
+    margin-bottom: 3px;
+    margin-top: 15px;
+}  
+
+form.contacto input, textarea{
+    border: 1px solid #97B5D2;
+    width: 550px;
+    /*height: 20px;*/
+    font-size: 1.2em;
+    padding: 2px;
+    color:#333;
+}
+
+form.contacto p.error {
+color:#B30000;
+font-size: 0.9em;
+font-weight: bold;
+display: none; 
+}
+
+#inquietudes{
+  font-family:Century Gothic;
+  position: relative;
+  left: 90px;  
+}
+
+#mensajeTextarea{
+    height: 200px;
+}
+
+#sumbmit1{
+    width: 100px;
+}
+       
+ 
+ .index_activity_dialog
+ {
+    font-weight:normal;
+    font-family:arial,verdana,sans-serif;
+    font-size:13px; 
+ }
+ .index_activities_table
+ {
+     position: relative;
+     left:100px;
+     
+ }
+ 
+ .index_activity_cell
+ {
+    text-align: center;
+    padding-right: 30px;  
+    font-family:Century Gothic;font-weight: bold; 
+    width: 75px;    
+    
+ }
+ 
+ .index_services_table
+ {
+    position: relative;
+    left: 70px;   
+        
+ }
+ .index_services_div
+ {   
+ background-color: #e5f5ff; 
+ border-radius: 10px;
+ -ms-border-radius: 10px;
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ -khtml-border-radius: 10px;
+ width: 200px;
+ height: 100px;
+ padding: 10px;
+   
+font-family:Century Gothic;font-weight: bold;
+}
+
+.has_dock.side-post-only .page-middle #region-main {
+    margin-left: 200px;
+}
+
+/** No blocks whatsoever **/
+.content-only #page-content #region-main-box {
+    margin-left: 0px;
+}
+
+.content-only #page-content #region-post-box {
+    margin-left: 0px;
+}
+
+.content-only #page-content #region-main {
+    margin-left: 0px;
+}
+
+.content-only #page-content #region-pre {
+    width: 0px;
+}
+
+.content-only #page-content #region-post {
+    width: 0px;
+}
+
+/** Report layout **/
+.pagelayout-report #page {width:auto;position:relative;overflow:visible;}
+.pagelayout-report #page-header {float:none;}
+.pagelayout-report #page-content {float:none;overflow:visible;width:auto;}
+.pagelayout-report #report-main-content {float:left;width:100%;}
+.pagelayout-report #report-main-content .region-content {margin-left:210px;margin-top:20px;}
+.pagelayout-report #report-main-content .region-content table {background-color:#FFF;}
+.pagelayout-report #report-region-wrap {width:0;float:right;position:relative;left:-100%;}
+.pagelayout-report #report-region-pre {width:200px;margin-top:20px;}
+.pagelayout-report #page-footer {float:none;}
+.pagelayout-report #page-content .region-content {overflow:visible;}
+.pagelayout-report.content-only #report-main-content .region-content {margin-left:0;}
+
+/** Correct for right to left languages **/
+.dir-rtl.pagelayout-report #report-main-content .region-content {margin-left:0;margin-right:200px;}
+.dir-rtl.pagelayout-report #report-region-wrap {left:0;}
+
+/** Stabalise IE6 behaviour on the report layout **/
+.ie6.pagelayout-report #report-main-content,
+.ie7.pagelayout-report #report-main-content {float:none;width:auto;}
+.ie6.pagelayout-report #report-region-wrap,
+.ie7.pagelayout-report #report-region-wrap {float:none;width:200px;left:auto;position:absolute;top:0;}
+.ie6.pagelayout-report #report-region-pre,
+.ie6.pagelayout-report #report-region-pre .block
+.ie7.pagelayout-report #report-region-pre,
+.ie7.pagelayout-report #report-region-pre .block {width:100%;}
